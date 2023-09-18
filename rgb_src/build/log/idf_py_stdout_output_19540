@@ -1,0 +1,204 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+Processing 2 dependencies:
+[1/2] idf (5.0.2)
+[2/2] lvgl/lvgl (8.2.0)
+-- Project sdkconfig file C:/Users/23191/Desktop/rgb_panel/sdkconfig
+Loading defaults file C:/Users/23191/Desktop/rgb_panel/sdkconfig.defaults...
+Loading defaults file C:/Users/23191/Desktop/rgb_panel/sdkconfig.defaults.esp32s3...
+-- App "rgb_panel" version: 1
+-- Adding linker script C:/Users/23191/Desktop/rgb_panel/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace C:/Espressif/frameworks/esp-idf-v5.0.2/components/app_update C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0.2/components/bt C:/Espressif/frameworks/esp-idf-v5.0.2/components/cmock C:/Espressif/frameworks/esp-idf-v5.0.2/components/console C:/Espressif/frameworks/esp-idf-v5.0.2/components/cxx C:/Espressif/frameworks/esp-idf-v5.0.2/components/driver C:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs C:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos C:/Espressif/frameworks/esp-idf-v5.0.2/components/hal C:/Espressif/frameworks/esp-idf-v5.0.2/components/heap C:/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser C:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test C:/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154 C:/Espressif/frameworks/esp-idf-v5.0.2/components/json C:/Espressif/frameworks/esp-idf-v5.0.2/components/log C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl C:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip C:/Users/23191/Desktop/rgb_panel/main C:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt C:/Espressif/frameworks/esp-idf-v5.0.2/components/newlib C:/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.0.2/components/openthread C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon C:/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c C:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm C:/Espressif/frameworks/esp-idf-v5.0.2/components/pthread C:/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc C:/Espressif/frameworks/esp-idf-v5.0.2/components/soc C:/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs C:/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.0.2/components/touch_element C:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp C:/Espressif/frameworks/esp-idf-v5.0.2/components/unity C:/Espressif/frameworks/esp-idf-v5.0.2/components/usb C:/Espressif/frameworks/esp-idf-v5.0.2/components/vfs C:/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling C:/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/23191/Desktop/rgb_panel/build
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj 
+ccache C:\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -IC:/Users/23191/Desktop/rgb_panel/build/config -IC:/Users/23191/Desktop/rgb_panel/main -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/private_include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include/arch -IC:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl -IC:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src -IC:/Users/23191/Desktop/rgb_panel/managed_components -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/console -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/xtensa -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/touch_element/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/usb/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -O2 -fmacro-prefix-map=C:/Users/23191/Desktop/rgb_panel=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.0.2=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\rgb_lcd_example_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj -c C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'app_main':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:112:5: error: unknown type name 'touch_panel_driver_t'
+  112 |     touch_panel_driver_t touch; // a touch panel driver
+      |     ^~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:114:1: error: unknown type name 'i2c_config_t'; did you mean 'gpio_config_t'?
+  114 | i2c_config_t i2c_conf = {
+      | ^~~~~~~~~~~~
+      | gpio_config_t
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:115:5: error: field name not in record or union initializer
+  115 |     .mode = I2C_MODE_MASTER,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:115:5: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:115:13: error: 'I2C_MODE_MASTER' undeclared (first use in this function)
+  115 |     .mode = I2C_MODE_MASTER,
+      |             ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:115:13: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:116:5: error: field name not in record or union initializer
+  116 |     .sda_io_num = 40,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:116:5: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:116:19: warning: excess elements in scalar initializer
+  116 |     .sda_io_num = 40,
+      |                   ^~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:116:19: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:117:5: error: field name not in record or union initializer
+  117 |     .sda_pullup_en = GPIO_PULLUP_ENABLE,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:117:5: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:117:22: warning: excess elements in scalar initializer
+  117 |     .sda_pullup_en = GPIO_PULLUP_ENABLE,
+      |                      ^~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:117:22: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:118:5: error: field name not in record or union initializer
+  118 |     .scl_io_num = 41,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:118:5: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:118:19: warning: excess elements in scalar initializer
+  118 |     .scl_io_num = 41,
+      |                   ^~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:118:19: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:119:5: error: field name not in record or union initializer
+  119 |     .scl_pullup_en = GPIO_PULLUP_ENABLE,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:119:5: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:119:22: warning: excess elements in scalar initializer
+  119 |     .scl_pullup_en = GPIO_PULLUP_ENABLE,
+      |                      ^~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:119:22: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:120:5: error: field name not in record or union initializer
+  120 |     .master.clk_speed = 100000,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:120:5: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:120:25: warning: excess elements in scalar initializer
+  120 |     .master.clk_speed = 100000,
+      |                         ^~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:120:25: note: (near initialization for 'i2c_conf')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:122:1: error: unknown type name 'i2c_bus_handle_t'; did you mean 'intr_handle_t'?
+  122 | i2c_bus_handle_t i2c_bus = i2c_bus_create(I2C_NUM_0, &i2c_conf);
+      | ^~~~~~~~~~~~~~~~
+      | intr_handle_t
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:122:28: error: implicit declaration of function 'i2c_bus_create' [-Werror=implicit-function-declaration]
+  122 | i2c_bus_handle_t i2c_bus = i2c_bus_create(I2C_NUM_0, &i2c_conf);
+      |                            ^~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:122:43: error: 'I2C_NUM_0' undeclared (first use in this function)
+  122 | i2c_bus_handle_t i2c_bus = i2c_bus_create(I2C_NUM_0, &i2c_conf);
+      |                                           ^~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:124:1: error: unknown type name 'touch_panel_config_t'
+  124 | touch_panel_config_t touch_cfg = {
+      | ^~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:125:5: error: field name not in record or union initializer
+  125 |     .interface_i2c = {
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:125:5: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:125:5: warning: braces around scalar initializer
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:125:5: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:126:9: error: field name not in record or union initializer
+  126 |         .i2c_bus = i2c_bus,
+      |         ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:126:9: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:127:9: error: field name not in record or union initializer
+  127 |         .clk_freq = 100000,
+      |         ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:127:9: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:127:21: warning: excess elements in scalar initializer
+  127 |         .clk_freq = 100000,
+      |                     ^~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:127:21: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:128:9: error: field name not in record or union initializer
+  128 |         .i2c_addr = 0x38,
+      |         ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:128:9: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:128:21: warning: excess elements in scalar initializer
+  128 |         .i2c_addr = 0x38,
+      |                     ^~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:128:21: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:130:5: error: field name not in record or union initializer
+  130 |     .interface_type = TOUCH_PANEL_IFACE_I2C,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:130:5: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:130:23: error: 'TOUCH_PANEL_IFACE_I2C' undeclared (first use in this function)
+  130 |     .interface_type = TOUCH_PANEL_IFACE_I2C,
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:130:23: warning: excess elements in scalar initializer
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:130:23: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:131:5: error: field name not in record or union initializer
+  131 |     .pin_num_int = -1,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:131:5: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:131:20: warning: excess elements in scalar initializer
+  131 |     .pin_num_int = -1,
+      |                    ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:131:20: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:132:5: error: field name not in record or union initializer
+  132 |     .direction = TOUCH_DIR_LRTB,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:132:5: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:132:18: error: 'TOUCH_DIR_LRTB' undeclared (first use in this function)
+  132 |     .direction = TOUCH_DIR_LRTB,
+      |                  ^~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:132:18: warning: excess elements in scalar initializer
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:132:18: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:133:5: error: field name not in record or union initializer
+  133 |     .width = 800,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:133:5: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:133:14: warning: excess elements in scalar initializer
+  133 |     .width = 800,
+      |              ^~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:133:14: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:134:5: error: field name not in record or union initializer
+  134 |     .height = 480,
+      |     ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:134:5: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:134:15: warning: excess elements in scalar initializer
+  134 |     .height = 480,
+      |               ^~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:134:15: note: (near initialization for 'touch_cfg')
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:138:1: error: implicit declaration of function 'touch_panel_find_driver' [-Werror=implicit-function-declaration]
+  138 | touch_panel_find_driver(TOUCH_PANEL_CONTROLLER_FT5X06, &touch);
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:138:25: error: 'TOUCH_PANEL_CONTROLLER_FT5X06' undeclared (first use in this function)
+  138 | touch_panel_find_driver(TOUCH_PANEL_CONTROLLER_FT5X06, &touch);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:139:6: error: request for member 'init' in something not a structure or union
+  139 | touch.init(&touch_cfg);
+      |      ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:142:6: error: request for member 'calibration_run' in something not a structure or union
+  142 | touch.calibration_run(&lcd, false);
+      |      ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:142:24: error: 'lcd' undeclared (first use in this function)
+  142 | touch.calibration_run(&lcd, false);
+      |                        ^~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:257:16: warning: unused variable 'disp' [-Wunused-variable]
+  257 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+cc1.exe: some warnings being treated as errors
+[2/9] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file C:/Users/23191/Desktop/rgb_panel/sdkconfig
+Note: HPM is enabled for the flash, force the ROM bootloader into DOUT mode for stable boot on
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- App "bootloader" version: v5.0.2-dirty
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos C:/Espressif/frameworks/esp-idf-v5.0.2/components/hal C:/Espressif/frameworks/esp-idf-v5.0.2/components/log C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader/subproject/main C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader/subproject/components/micro-ecc C:/Espressif/frameworks/esp-idf-v5.0.2/components/newlib C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0.2/components/soc C:/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/23191/Desktop/rgb_panel/build/bootloader
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b70 bytes. 0x2490 bytes (29%) free.
+ninja: build stopped: subcommand failed.

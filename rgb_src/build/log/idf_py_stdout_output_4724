@@ -1,0 +1,132 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b50 bytes. 0x24b0 bytes (29%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:48,
+                 from C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:22:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'main_ui':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:532:18: warning: unused variable 'background' [-Wunused-variable]
+  532 |   LV_IMG_DECLARE(background);
+      |                  ^~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_img.h:219:60: note: in definition of macro 'LV_IMG_DECLARE'
+  219 | #define LV_IMG_DECLARE(var_name) extern const lv_img_dsc_t var_name;
+      |                                                            ^~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'ui_setup':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1180:13: warning: unused variable 'tile1' [-Wunused-variable]
+ 1180 |   lv_obj_t *tile1 = lv_tileview_add_tile(tv, 0, 0, LV_DIR_BOTTOM);
+      |             ^~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:48,
+                 from C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:22:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1147:18: warning: unused variable 'background' [-Wunused-variable]
+ 1147 |   LV_IMG_DECLARE(background);
+      |                  ^~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_img.h:219:60: note: in definition of macro 'LV_IMG_DECLARE'
+  219 | #define LV_IMG_DECLARE(var_name) extern const lv_img_dsc_t var_name;
+      |                                                            ^~~~~~~~
+At top level:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:237:18: warning: 'user_init_sdcard' defined but not used [-Wunused-function]
+  237 | static esp_err_t user_init_sdcard()
+      |                  ^~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:69:18: warning: 'chart2' defined but not used [-Wunused-variable]
+   69 | static lv_obj_t *chart2;
+      |                  ^~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:68:18: warning: 'chart1' defined but not used [-Wunused-variable]
+   68 | static lv_obj_t *chart1;
+      |                  ^~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable rgb_panel.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin
+[7/8] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/23191/Desktop/rgb_panel/build/partition_table/partition-table.bin C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin"
+rgb_panel.bin binary size 0x14ba80 bytes. Smallest app partition is 0x800000 bytes. 0x6b4580 bytes (84%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/23191/Desktop/rgb_panel/build -P C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/run_serial_tool.cmake"
+esptool esp32s3 -p COM21 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dout --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 rgb_panel.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM21
+Connecting...
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:a6:f2:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0015bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 23376 bytes to 14755...
+Writing at 0x00000000... (100 %)
+Wrote 23376 bytes (14755 compressed) at 0x00000000 in 0.4 seconds (effective 441.1 kbit/s)...
+Hash of data verified.
+Compressed 1358464 bytes to 870487...
+Writing at 0x00010000... (1 %)
+Writing at 0x00019ab6... (3 %)
+Writing at 0x00024a12... (5 %)
+Writing at 0x0002dcea... (7 %)
+Writing at 0x0003caa8... (9 %)
+Writing at 0x00041dee... (11 %)
+Writing at 0x00047259... (12 %)
+Writing at 0x0004c212... (14 %)
+Writing at 0x0005128e... (16 %)
+Writing at 0x000560e2... (18 %)
+Writing at 0x0005b0fa... (20 %)
+Writing at 0x00060597... (22 %)
+Writing at 0x00069581... (24 %)
+Writing at 0x0007223d... (25 %)
+Writing at 0x0007c718... (27 %)
+Writing at 0x000869d9... (29 %)
+Writing at 0x0008bfe9... (31 %)
+Writing at 0x000964dc... (33 %)
+Writing at 0x0009c18d... (35 %)
+Writing at 0x000a1301... (37 %)
+Writing at 0x000a6d4c... (38 %)
+Writing at 0x000ac65c... (40 %)
+Writing at 0x000b1bb5... (42 %)
+Writing at 0x000b6de9... (44 %)
+Writing at 0x000bbe75... (46 %)
+Writing at 0x000c0fd8... (48 %)
+Writing at 0x000c659e... (50 %)
+Writing at 0x000cb7fa... (51 %)
+Writing at 0x000d1a49... (53 %)
+Writing at 0x000d69d3... (55 %)
+Writing at 0x000dba72... (57 %)
+Writing at 0x000e16b1... (59 %)
+Writing at 0x000e6ac8... (61 %)
+Writing at 0x000ec2bc... (62 %)
+Writing at 0x000f1391... (64 %)
+Writing at 0x000f6251... (66 %)
+Writing at 0x000fb32a... (68 %)
+Writing at 0x00100560... (70 %)
+Writing at 0x00105928... (72 %)
+Writing at 0x0010ac29... (74 %)
+Writing at 0x0011050f... (75 %)
+Writing at 0x001154cf... (77 %)
+Writing at 0x0011a723... (79 %)
+Writing at 0x0011f63f... (81 %)
+Writing at 0x001246a7... (83 %)
+Writing at 0x001296fb... (85 %)
+Writing at 0x0012eb9a... (87 %)
+Writing at 0x0013438e... (88 %)
+Writing at 0x00139e6a... (90 %)
+Writing at 0x00143c41... (92 %)
+Writing at 0x0014a7c0... (94 %)
+Writing at 0x001501bb... (96 %)
+Writing at 0x00155997... (98 %)
+Writing at 0x0015aee7... (100 %)
+Wrote 1358464 bytes (870487 compressed) at 0x00010000 in 9.8 seconds (effective 1105.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 308.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,64 @@
+[1/10] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_rgb.c.obj
+[2/10] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[3/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b40 bytes. 0x24c0 bytes (29%) free.
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable rgb_panel.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin
+[7/8] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/23191/Desktop/rgb_panel/build/partition_table/partition-table.bin C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin"
+rgb_panel.bin binary size 0x65c60 bytes. Smallest app partition is 0x100000 bytes. 0x9a3a0 bytes (60%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/23191/Desktop/rgb_panel/build -P C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/run_serial_tool.cmake"
+esptool esp32s3 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 rgb_panel.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM4
+Connecting....
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: f4:12:fa:cb:1a:ac
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00075fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 23360 bytes to 14735...
+Writing at 0x00000000... (100 %)
+Wrote 23360 bytes (14735 compressed) at 0x00000000 in 0.7 seconds (effective 265.3 kbit/s)...
+Hash of data verified.
+Compressed 416864 bytes to 266757...
+Writing at 0x00010000... (5 %)
+Writing at 0x00019c84... (11 %)
+Writing at 0x000224d2... (17 %)
+Writing at 0x00027c8d... (23 %)
+Writing at 0x0002d0bc... (29 %)
+Writing at 0x00032097... (35 %)
+Writing at 0x00036e93... (41 %)
+Writing at 0x0003c22a... (47 %)
+Writing at 0x000411b7... (52 %)
+Writing at 0x00047481... (58 %)
+Writing at 0x0004c52c... (64 %)
+Writing at 0x0005186c... (70 %)
+Writing at 0x000596ef... (76 %)
+Writing at 0x0006225b... (82 %)
+Writing at 0x00069106... (88 %)
+Writing at 0x0006e861... (94 %)
+Writing at 0x00073efb... (100 %)
+Wrote 416864 bytes (266757 compressed) at 0x00010000 in 7.0 seconds (effective 479.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 389.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

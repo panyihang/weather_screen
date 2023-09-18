@@ -1,0 +1,186 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+Processing 4 dependencies:
+[1/4] espressif/esp_lcd_touch (1.0.4)
+[2/4] espressif/esp_lcd_touch_ft5x06 (1.0.0)
+[3/4] idf (5.0.2)
+[4/4] lvgl/lvgl (8.2.0)
+-- Project sdkconfig file C:/Users/23191/Desktop/rgb_panel/sdkconfig
+Loading defaults file C:/Users/23191/Desktop/rgb_panel/sdkconfig.defaults...
+Loading defaults file C:/Users/23191/Desktop/rgb_panel/sdkconfig.defaults.esp32s3...
+-- App "rgb_panel" version: 1
+-- Adding linker script C:/Users/23191/Desktop/rgb_panel/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__esp_lcd_touch espressif__esp_lcd_touch_ft5x06 esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace C:/Espressif/frameworks/esp-idf-v5.0.2/components/app_update C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0.2/components/bt C:/Espressif/frameworks/esp-idf-v5.0.2/components/cmock C:/Espressif/frameworks/esp-idf-v5.0.2/components/console C:/Espressif/frameworks/esp-idf-v5.0.2/components/cxx C:/Espressif/frameworks/esp-idf-v5.0.2/components/driver C:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump C:/Users/23191/Desktop/rgb_panel/managed_components/espressif__esp_lcd_touch C:/Users/23191/Desktop/rgb_panel/managed_components/espressif__esp_lcd_touch_ft5x06 C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs C:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos C:/Espressif/frameworks/esp-idf-v5.0.2/components/hal C:/Espressif/frameworks/esp-idf-v5.0.2/components/heap C:/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser C:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test C:/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154 C:/Espressif/frameworks/esp-idf-v5.0.2/components/json C:/Espressif/frameworks/esp-idf-v5.0.2/components/log C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl C:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip C:/Users/23191/Desktop/rgb_panel/main C:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt C:/Espressif/frameworks/esp-idf-v5.0.2/components/newlib C:/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.0.2/components/openthread C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon C:/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c C:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm C:/Espressif/frameworks/esp-idf-v5.0.2/components/pthread C:/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc C:/Espressif/frameworks/esp-idf-v5.0.2/components/soc C:/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs C:/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.0.2/components/touch_element C:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp C:/Espressif/frameworks/esp-idf-v5.0.2/components/unity C:/Espressif/frameworks/esp-idf-v5.0.2/components/usb C:/Espressif/frameworks/esp-idf-v5.0.2/components/vfs C:/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling C:/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/23191/Desktop/rgb_panel/build
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b50 bytes. 0x24b0 bytes (29%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Background_img.c.obj
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:48,
+                 from C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:25:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'main_ui':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:669:18: warning: unused variable 'background' [-Wunused-variable]
+  669 |   LV_IMG_DECLARE(background);
+      |                  ^~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_img.h:219:60: note: in definition of macro 'LV_IMG_DECLARE'
+  219 | #define LV_IMG_DECLARE(var_name) extern const lv_img_dsc_t var_name;
+      |                                                            ^~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'event_connect_wifi':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1511:15: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+ 1511 |     wifi_ssid = buf;
+      |               ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1516:19: warning: assignment to 'char' from 'const char **' makes integer from pointer without a cast [-Wint-conversion]
+ 1516 |     wifi_password = &test;
+      |                   ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'ui_setup':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1643:13: warning: unused variable 'tile1' [-Wunused-variable]
+ 1643 |   lv_obj_t *tile1 = lv_tileview_add_tile(tv, 0, 0, LV_DIR_BOTTOM);
+      |             ^~~~~
+At top level:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:261:18: warning: 'user_init_sdcard' defined but not used [-Wunused-function]
+  261 | static esp_err_t user_init_sdcard()
+      |                  ^~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:89:18: warning: 'chart2' defined but not used [-Wunused-variable]
+   89 | static lv_obj_t *chart2;
+      |                  ^~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:88:18: warning: 'chart1' defined but not used [-Wunused-variable]
+   88 | static lv_obj_t *chart1;
+      |                  ^~~~~~
+[4/9] Linking C static library esp-idf\main\libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable rgb_panel.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin
+[8/9] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/23191/Desktop/rgb_panel/build/partition_table/partition-table.bin C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin"
+rgb_panel.bin binary size 0x236870 bytes. Smallest app partition is 0x800000 bytes. 0x5c9790 bytes (72%) free.
+[8/9] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/23191/Desktop/rgb_panel/build -P C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/run_serial_tool.cmake"
+esptool esp32s3 -p COM21 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dout --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 rgb_panel.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM21
+Connecting...
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:a6:f2:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00246fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 23376 bytes to 14755...
+Writing at 0x00000000... (100 %)
+Wrote 23376 bytes (14755 compressed) at 0x00000000 in 0.4 seconds (effective 434.5 kbit/s)...
+Hash of data verified.
+Compressed 2320496 bytes to 1332335...
+Writing at 0x00010000... (1 %)
+Writing at 0x00019a5f... (2 %)
+Writing at 0x000248fb... (3 %)
+Writing at 0x0002d9fc... (4 %)
+Writing at 0x0003cd4e... (6 %)
+Writing at 0x00042114... (7 %)
+Writing at 0x0004756e... (8 %)
+Writing at 0x0004c53d... (9 %)
+Writing at 0x00051557... (10 %)
+Writing at 0x0005640c... (12 %)
+Writing at 0x0005b3ff... (13 %)
+Writing at 0x00060647... (14 %)
+Writing at 0x00069354... (15 %)
+Writing at 0x00075656... (17 %)
+Writing at 0x0007f82c... (18 %)
+Writing at 0x000884d6... (19 %)
+Writing at 0x00091447... (20 %)
+Writing at 0x00099b43... (21 %)
+Writing at 0x000a23ea... (23 %)
+Writing at 0x000ab395... (24 %)
+Writing at 0x000b3ace... (25 %)
+Writing at 0x000bca97... (26 %)
+Writing at 0x000c665b... (28 %)
+Writing at 0x000cf46d... (29 %)
+Writing at 0x000d7866... (30 %)
+Writing at 0x000df1be... (31 %)
+Writing at 0x000e698d... (32 %)
+Writing at 0x000efd3e... (34 %)
+Writing at 0x000f9751... (35 %)
+Writing at 0x00105147... (36 %)
+Writing at 0x00111689... (37 %)
+Writing at 0x0011b887... (39 %)
+Writing at 0x00125365... (40 %)
+Writing at 0x0012da5d... (41 %)
+Writing at 0x00137c44... (42 %)
+Writing at 0x00143659... (43 %)
+Writing at 0x0014a2f0... (45 %)
+Writing at 0x00150df1... (46 %)
+Writing at 0x0015bbca... (47 %)
+Writing at 0x00161067... (48 %)
+Writing at 0x00166b3a... (50 %)
+Writing at 0x0016c247... (51 %)
+Writing at 0x001717cd... (52 %)
+Writing at 0x00176cd7... (53 %)
+Writing at 0x0017bb6e... (54 %)
+Writing at 0x00180e05... (56 %)
+Writing at 0x00186412... (57 %)
+Writing at 0x0018b495... (58 %)
+Writing at 0x00191958... (59 %)
+Writing at 0x001968a0... (60 %)
+Writing at 0x0019b743... (62 %)
+Writing at 0x001a1229... (63 %)
+Writing at 0x001a68e6... (64 %)
+Writing at 0x001ab76e... (65 %)
+Writing at 0x001b08ea... (67 %)
+Writing at 0x001b57b5... (68 %)
+Writing at 0x001ba97f... (69 %)
+Writing at 0x001c00e9... (70 %)
+Writing at 0x001c5628... (71 %)
+Writing at 0x001caa05... (73 %)
+Writing at 0x001cf8b1... (74 %)
+Writing at 0x001d49bf... (75 %)
+Writing at 0x001d9abe... (76 %)
+Writing at 0x001ded59... (78 %)
+Writing at 0x001e41d4... (79 %)
+Writing at 0x001e9d97... (80 %)
+Writing at 0x001ef135... (81 %)
+Writing at 0x001f4638... (82 %)
+Writing at 0x001f973f... (84 %)
+Writing at 0x001feac4... (85 %)
+Writing at 0x00203b3a... (86 %)
+Writing at 0x00208a8b... (87 %)
+Writing at 0x0020e150... (89 %)
+Writing at 0x0021363a... (90 %)
+Writing at 0x00218bfc... (91 %)
+Writing at 0x0021ef7e... (92 %)
+Writing at 0x00227947... (93 %)
+Writing at 0x0022ee7b... (95 %)
+Writing at 0x00234847... (96 %)
+Writing at 0x00239d91... (97 %)
+Writing at 0x0023f492... (98 %)
+Writing at 0x00244856... (100 %)
+Wrote 2320496 bytes (1332335 compressed) at 0x00010000 in 15.6 seconds (effective 1188.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 303.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

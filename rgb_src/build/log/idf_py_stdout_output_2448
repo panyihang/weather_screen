@@ -1,0 +1,18 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b70 bytes. 0x2490 bytes (29%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'app_main':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:226:16: warning: unused variable 'disp' [-Wunused-variable]
+  226 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable rgb_panel.elf
+FAILED: rgb_panel.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-g++.exe -mlongcalls  @CMakeFiles\rgb_panel.elf.rsp -o rgb_panel.elf  && cd ."
+c:/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: esp-idf/main/libmain.a(rgb_lcd_example_main.c.obj):(.literal.app_main+0x98): undefined reference to `lv_demo_benchmark'
+c:/espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/../lib/gcc/xtensa-esp32s3-elf/11.2.0/../../../../xtensa-esp32s3-elf/bin/ld.exe: esp-idf/main/libmain.a(rgb_lcd_example_main.c.obj): in function `app_main':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:235: undefined reference to `lv_demo_benchmark'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

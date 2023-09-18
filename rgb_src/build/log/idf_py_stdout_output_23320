@@ -1,0 +1,13 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+Processing 4 dependencies:
+[1/4] espressif/esp_lcd_touch (1.0.4)
+[2/4] espressif/esp_lcd_touch_ft5x06 (1.0.0)
+[3/4] idf (5.0.2)
+[4/4] lvgl/lvgl (8.2.0)
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/23191/Desktop/rgb_panel/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\23191\Desktop\rgb_panel -BC:\Users\23191\Desktop\rgb_panel\build

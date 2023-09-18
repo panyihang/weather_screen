@@ -1,0 +1,114 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b50 bytes. 0x24b0 bytes (29%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:48,
+                 from C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:20:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'main_ui':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:485:18: warning: unused variable 'background' [-Wunused-variable]
+  485 |   LV_IMG_DECLARE(background);
+      |                  ^~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_img.h:219:60: note: in definition of macro 'LV_IMG_DECLARE'
+  219 | #define LV_IMG_DECLARE(var_name) extern const lv_img_dsc_t var_name;
+      |                                                            ^~~~~~~~
+At top level:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:383:13: warning: 'ta_event_cb' defined but not used [-Wunused-function]
+  383 | static void ta_event_cb(lv_event_t *e) {
+      |             ^~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:368:13: warning: 'event_start' defined but not used [-Wunused-function]
+  368 | static void event_start(lv_event_t *e) {
+      |             ^~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:358:13: warning: 'event_handler' defined but not used [-Wunused-function]
+  358 | static void event_handler(lv_event_t *e) {
+      |             ^~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:352:13: warning: 'opa_cb' defined but not used [-Wunused-function]
+  352 | static void opa_cb(lv_event_t *e) {
+      |             ^~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:61:18: warning: 'chart2' defined but not used [-Wunused-variable]
+   61 | static lv_obj_t *chart2;
+      |                  ^~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:60:18: warning: 'chart1' defined but not used [-Wunused-variable]
+   60 | static lv_obj_t *chart1;
+      |                  ^~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable rgb_panel.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin
+[7/8] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/23191/Desktop/rgb_panel/build/partition_table/partition-table.bin C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin"
+rgb_panel.bin binary size 0x143340 bytes. Smallest app partition is 0x800000 bytes. 0x6bccc0 bytes (84%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/23191/Desktop/rgb_panel/build -P C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/run_serial_tool.cmake"
+esptool esp32s3 -p COM21 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dout --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 rgb_panel.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM21
+Connecting...
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:a6:f2:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00153fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 23376 bytes to 14755...
+Writing at 0x00000000... (100 %)
+Wrote 23376 bytes (14755 compressed) at 0x00000000 in 0.4 seconds (effective 444.2 kbit/s)...
+Hash of data verified.
+Compressed 1323840 bytes to 635354...
+Writing at 0x00010000... (2 %)
+Writing at 0x00022bf6... (5 %)
+Writing at 0x00037840... (7 %)
+Writing at 0x00043e6a... (10 %)
+Writing at 0x0004c4cf... (12 %)
+Writing at 0x00055a6c... (15 %)
+Writing at 0x0005ebfa... (17 %)
+Writing at 0x000667cd... (20 %)
+Writing at 0x0006f3d4... (23 %)
+Writing at 0x00078034... (25 %)
+Writing at 0x000822b5... (28 %)
+Writing at 0x0008b6b2... (30 %)
+Writing at 0x0009670e... (33 %)
+Writing at 0x000a0983... (35 %)
+Writing at 0x000aa1a4... (38 %)
+Writing at 0x000b47d5... (41 %)
+Writing at 0x000bfac5... (43 %)
+Writing at 0x000caf83... (46 %)
+Writing at 0x000d607f... (48 %)
+Writing at 0x000df705... (51 %)
+Writing at 0x000e95c6... (53 %)
+Writing at 0x000ee6f3... (56 %)
+Writing at 0x000f3e4e... (58 %)
+Writing at 0x000f96ac... (61 %)
+Writing at 0x000fe90c... (64 %)
+Writing at 0x00103f1e... (66 %)
+Writing at 0x00109372... (69 %)
+Writing at 0x0010e2a8... (71 %)
+Writing at 0x00113758... (74 %)
+Writing at 0x001186c2... (76 %)
+Writing at 0x0011e921... (79 %)
+Writing at 0x00123701... (82 %)
+Writing at 0x00128556... (84 %)
+Writing at 0x0012d7fb... (87 %)
+Writing at 0x001331d2... (89 %)
+Writing at 0x0013bb2c... (92 %)
+Writing at 0x001435ac... (94 %)
+Writing at 0x001494e9... (97 %)
+Writing at 0x0014ebc4... (100 %)
+Wrote 1323840 bytes (635354 compressed) at 0x00010000 in 8.9 seconds (effective 1190.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 302.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

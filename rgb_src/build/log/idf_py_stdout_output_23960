@@ -1,0 +1,153 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b50 bytes. 0x24b0 bytes (29%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:48,
+                 from C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:25:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'main_ui':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:553:18: warning: unused variable 'background' [-Wunused-variable]
+  553 |   LV_IMG_DECLARE(background);
+      |                  ^~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_img.h:219:60: note: in definition of macro 'LV_IMG_DECLARE'
+  219 | #define LV_IMG_DECLARE(var_name) extern const lv_img_dsc_t var_name;
+      |                                                            ^~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'http_client_task':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1101:7: warning: unused variable 'content_length' [-Wunused-variable]
+ 1101 |   int content_length = 0;
+      |       ^~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1100:8: warning: unused variable 'output_buffer' [-Wunused-variable]
+ 1100 |   char output_buffer[MAX_HTTP_OUTPUT_BUFFER] = {0}; // Buffer to store response of http request
+      |        ^~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'event_connect_wifi':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1380:15: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+ 1380 |     wifi_ssid = buf;
+      |               ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1385:19: warning: assignment to 'char' from 'const char **' makes integer from pointer without a cast [-Wint-conversion]
+ 1385 |     wifi_password = &test;
+      |                   ^
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'ui_setup':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1493:13: warning: unused variable 'tile1' [-Wunused-variable]
+ 1493 |   lv_obj_t *tile1 = lv_tileview_add_tile(tv, 0, 0, LV_DIR_BOTTOM);
+      |             ^~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:48,
+                 from C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:25:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:1460:18: warning: unused variable 'background' [-Wunused-variable]
+ 1460 |   LV_IMG_DECLARE(background);
+      |                  ^~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_img.h:219:60: note: in definition of macro 'LV_IMG_DECLARE'
+  219 | #define LV_IMG_DECLARE(var_name) extern const lv_img_dsc_t var_name;
+      |                                                            ^~~~~~~~
+At top level:
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:255:18: warning: 'user_init_sdcard' defined but not used [-Wunused-function]
+  255 | static esp_err_t user_init_sdcard()
+      |                  ^~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:87:18: warning: 'chart2' defined but not used [-Wunused-variable]
+   87 | static lv_obj_t *chart2;
+      |                  ^~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:86:18: warning: 'chart1' defined but not used [-Wunused-variable]
+   86 | static lv_obj_t *chart1;
+      |                  ^~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable rgb_panel.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin
+[7/8] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/23191/Desktop/rgb_panel/build/partition_table/partition-table.bin C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin"
+rgb_panel.bin binary size 0x174da0 bytes. Smallest app partition is 0x800000 bytes. 0x68b260 bytes (82%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/23191/Desktop/rgb_panel/build -P C:/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/run_serial_tool.cmake"
+esptool esp32s3 -p COM21 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dout --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 rgb_panel.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM21
+Connecting...
+Chip is ESP32-S3 (revision v0.1)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:a6:f2:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00184fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 23376 bytes to 14755...
+Writing at 0x00000000... (100 %)
+Wrote 23376 bytes (14755 compressed) at 0x00000000 in 0.4 seconds (effective 435.4 kbit/s)...
+Hash of data verified.
+Compressed 1527200 bytes to 987681...
+Writing at 0x00010000... (1 %)
+Writing at 0x00019ae7... (3 %)
+Writing at 0x00024939... (4 %)
+Writing at 0x0002dac4... (6 %)
+Writing at 0x0003cd00... (8 %)
+Writing at 0x0004208e... (9 %)
+Writing at 0x000474ee... (11 %)
+Writing at 0x0004c4ae... (13 %)
+Writing at 0x000514e4... (14 %)
+Writing at 0x0005637a... (16 %)
+Writing at 0x0005b37a... (18 %)
+Writing at 0x000605e9... (19 %)
+Writing at 0x000695a4... (21 %)
+Writing at 0x00072186... (22 %)
+Writing at 0x0007c607... (24 %)
+Writing at 0x00087c08... (26 %)
+Writing at 0x0008e5fd... (27 %)
+Writing at 0x0009500a... (29 %)
+Writing at 0x0009f96b... (31 %)
+Writing at 0x000a52f4... (32 %)
+Writing at 0x000aad2b... (34 %)
+Writing at 0x000b03ce... (36 %)
+Writing at 0x000b5951... (37 %)
+Writing at 0x000ba877... (39 %)
+Writing at 0x000bfaaf... (40 %)
+Writing at 0x000c4dca... (42 %)
+Writing at 0x000ca137... (44 %)
+Writing at 0x000d058d... (45 %)
+Writing at 0x000d53ce... (47 %)
+Writing at 0x000da2b5... (49 %)
+Writing at 0x000dfc62... (50 %)
+Writing at 0x000e540a... (52 %)
+Writing at 0x000ea292... (54 %)
+Writing at 0x000ef3cb... (55 %)
+Writing at 0x000f42da... (57 %)
+Writing at 0x000f93d8... (59 %)
+Writing at 0x000feaef... (60 %)
+Writing at 0x001040a8... (62 %)
+Writing at 0x001093ce... (63 %)
+Writing at 0x0010e2db... (65 %)
+Writing at 0x00113411... (67 %)
+Writing at 0x00118526... (68 %)
+Writing at 0x0011d818... (70 %)
+Writing at 0x00122c84... (72 %)
+Writing at 0x0012874e... (73 %)
+Writing at 0x0012db8d... (75 %)
+Writing at 0x00132fc8... (77 %)
+Writing at 0x001380f6... (78 %)
+Writing at 0x0013d13f... (80 %)
+Writing at 0x00141f8a... (81 %)
+Writing at 0x00147586... (83 %)
+Writing at 0x0014c5ec... (85 %)
+Writing at 0x00151d83... (86 %)
+Writing at 0x00157363... (88 %)
+Writing at 0x0015fc6c... (90 %)
+Writing at 0x00168444... (91 %)
+Writing at 0x0016dd75... (93 %)
+Writing at 0x00173088... (95 %)
+Writing at 0x0017868f... (96 %)
+Writing at 0x0017dc8a... (98 %)
+Writing at 0x00183034... (100 %)
+Wrote 1527200 bytes (987681 compressed) at 0x00010000 in 11.2 seconds (effective 1086.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 307.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

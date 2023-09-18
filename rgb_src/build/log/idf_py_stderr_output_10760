@@ -1,0 +1,13 @@
+CMake Error at CMakeLists.txt:4 (include):
+  Syntax error in cmake code at
+
+    C:/Users/23191/Desktop/rgb_panel/CMakeLists.txt:4
+
+  when parsing string
+
+    C:\Users\23191\Desktop\rgb_panel\managed_components\lvgl__lvgl\demos\*
+
+  Invalid character escape '\U'.
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

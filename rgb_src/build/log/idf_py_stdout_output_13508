@@ -1,0 +1,50 @@
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/tools/idf_size.py --archives C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.map"
+Total sizes:
+Used stat D/IRAM:   97030 bytes ( 248826 remain, 28.1% used)
+      .data size:   12048 bytes
+      .bss  size:    4128 bytes
+      .text size:   79827 bytes
+   .vectors size:    1027 bytes
+Used Flash size :  408519 bytes
+      .text     :  317859 bytes
+      .rodata   :   90404 bytes
+Total image size:  501421 bytes (.bin may be padded larger)
+Per-archive contributions to ELF file:
+            Archive File DRAM .data & 0.bss .rtc_noinit IRAM0 .text & 0.vectors ram_st_total Flash .text & .rodata & .appdesc flash_total
+         liblvgl__lvgl.a        136    1104           0       14522           0        15762      185027     40347          0      240032
+                  libc.a          4       4           0           0           0            8       59173      4113          0       63290
+     libesp_hw_support.a        512      80          16        7464           0         8072       17287      4986          0       30265
+           libfreertos.a       3124     765           0       14249         424        18562         371      4296          0       22464
+         libesp_system.a        729     291           0        4507           0         5527        8687      5822          0       19745
+          libspi_flash.a       3258     560           0       13196           0        17014         851      2196          0       19501
+             libdriver.a        136      22           0        1219           0         1377       10611      3242          0       15208
+               libheap.a         12       8           0        6071           0         6091        3018      3506          0       12607
+            libesp_lcd.a         12       0           0         537           0          549        8889      3023          0       12461
+                libhal.a        350       0           0        5911           0         6261        3708       296          0       10265
+                libvfs.a        348      64           0           0           0          412        6802       930          0        8080
+         libesp_common.a          0       0           0           0           0            0          53      7552          0        7605
+          libesp_psram.a       1922     130           0        3248           0         5300        1231       933          0        7334
+        libesp_ringbuf.a          0       0           0        3898           0         3898           0      2346          0        6244
+               libmain.a          0     224           0           0           0          224        3336      1319          0        4655
+             libnewlib.a        251     440           0        1743           0         2434        1003       341          0        3338
+libespressif__esp_lcd_to          0       0           0           0           0            0        1237       674          0        1911
+                libsoc.a          0       0           0           0           0            0           0      1864          0        1864
+          libesp_timer.a         32      36           0         505           0          573        1024       237          0        1798
+              libefuse.a         56       4           0           0           0           60        1057       454          0        1567
+             libxtensa.a       1024       0           0          77           0         1101         102        35          0        1238
+      libesp_partition.a          0       8           0           0           0            8         907       279          0        1186
+ libbootloader_support.a          0       0           0         906           0          906          34       194          0        1134
+                liblog.a          8     272           0         265           0          545         361       124          0         758
+                  libm.a          0       0           0           0           0            0         630         0          0         630
+libespressif__esp_lcd_to          0       0           0           0           0            0         329       159          0         488
+     libesp_app_format.a          1       8           0         172           0          181          31         4        256         464
+             libxt_hal.a          0       0           0         405           0          405           0        32          0         437
+            libpthread.a          8      12           0           0           0           20         311         0          0         319
+         libapp_update.a          0       4           0           0           0            4         158       125          0         283
+            libesp_rom.a          0       0           0         202           0          202           0         0          0         202
+                libgcc.a          0       0           0           0           0            0           0       160          0         160
+                   (exe)          0       0           0           0           3            3           3        12          0          18
+             libesp_pm.a          0       0           0           8           0            8           8         0          0          16
+                libcxx.a          0       0           0           0           0            0           5         0          0           5
+            libesp_phy.a          0       0           0           0           0            0           5         0          0           5
+         libmbedcrypto.a          0       0           0           0           0            0           0         0          0           0

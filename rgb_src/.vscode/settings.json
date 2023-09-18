@@ -1,0 +1,12 @@
+{
+    "idf.adapterTargetName": "esp32s3",
+    "files.associations": {
+        "esp_err.h": "c",
+        "semphr.h": "c",
+        "freertos.h": "c",
+        "i2c.h": "c",
+        "esp_sntp.h": "c",
+        "task.h": "c",
+        "esp_http_client.h": "c"
+    }
+}

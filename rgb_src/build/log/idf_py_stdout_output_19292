@@ -1,0 +1,876 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b40 bytes. 0x24c0 bytes (29%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj 
+ccache C:\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -IC:/Users/23191/Desktop/rgb_panel/build/config -IC:/Users/23191/Desktop/rgb_panel/main -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/private_include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include/arch -IC:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl -IC:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src -IC:/Users/23191/Desktop/rgb_panel/managed_components -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/console -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/xtensa -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/touch_element/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/usb/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -O2 -fmacro-prefix-map=C:/Users/23191/Desktop/rgb_panel=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.0.2=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\rgb_lcd_example_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj -c C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'app_main':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:232:5: error: too few arguments to function 'example_lvgl_demo_ui'
+  232 |     example_lvgl_demo_ui();
+      |     ^~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:69:13: note: declared here
+   69 | extern void example_lvgl_demo_ui(lv_disp_t *disp);
+      |             ^~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:220:16: warning: unused variable 'disp' [-Wunused-variable]
+  220 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+[3/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lvgl_demo_ui.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/lvgl_demo_ui.c.obj 
+ccache C:\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -IC:/Users/23191/Desktop/rgb_panel/build/config -IC:/Users/23191/Desktop/rgb_panel/main -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/private_include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/. -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include/arch -IC:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl -IC:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src -IC:/Users/23191/Desktop/rgb_panel/managed_components -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/driver/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/console -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/esp32s3/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/xtensa -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/touch_element/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include/esp32s3 -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/usb/include -IC:/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -O2 -fmacro-prefix-map=C:/Users/23191/Desktop/rgb_panel=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.0.2=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/lvgl_demo_ui.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\lvgl_demo_ui.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/lvgl_demo_ui.c.obj -c C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:76:8: error: unknown type name 'esp_timer_handle_t'
+   76 | static esp_timer_handle_t g_wifi_timeout_timer  = NULL;
+      |        ^~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:76:51: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   76 | static esp_timer_handle_t g_wifi_timeout_timer  = NULL;
+      |                                                   ^~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:96:39: error: unknown type name 'esp_timer_cb_t'; did you mean 'lv_timer_cb_t'?
+   96 | static void wifi_timeout_timer_create(esp_timer_cb_t callback, const char *name, uint32_t time_ms)
+      |                                       ^~~~~~~~~~~~~~
+      |                                       lv_timer_cb_t
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'wifi_timeout_timer_delete':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:114:9: error: implicit declaration of function 'esp_timer_stop'; did you mean 'esp_wifi_stop'? [-Werror=implicit-function-declaration]
+  114 |         esp_timer_stop(g_wifi_timeout_timer);
+      |         ^~~~~~~~~~~~~~
+      |         esp_wifi_stop
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:115:9: error: implicit declaration of function 'esp_timer_delete'; did you mean 'lv_timer_reset'? [-Werror=implicit-function-declaration]
+  115 |         esp_timer_delete(g_wifi_timeout_timer);
+      |         ^~~~~~~~~~~~~~~~
+      |         lv_timer_reset
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:116:30: warning: assignment to 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  116 |         g_wifi_timeout_timer = NULL;
+      |                              ^
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'preload_create':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:124:46: warning: passing argument 2 of 'lv_spinner_create' makes integer from pointer without a cast [-Wint-conversion]
+  124 |     g_preload = lv_spinner_create(g_contain, NULL);
+      |                                              ^~~~
+      |                                              |
+      |                                              void *
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/lv_widgets.h:27,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:70,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/spinner/lv_spinner.h:38:58: note: expected 'uint32_t' {aka 'long unsigned int'} but argument is of type 'void *'
+   38 | lv_obj_t * lv_spinner_create(lv_obj_t * parent, uint32_t time, uint32_t arc_length);
+      |                                                 ~~~~~~~~~^~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:124:17: error: too few arguments to function 'lv_spinner_create'
+  124 |     g_preload = lv_spinner_create(g_contain, NULL);
+      |                 ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/lv_widgets.h:27,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:70,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/spinner/lv_spinner.h:38:12: note: declared here
+   38 | lv_obj_t * lv_spinner_create(lv_obj_t * parent, uint32_t time, uint32_t arc_length);
+      |            ^~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:126:29: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  126 |     lv_obj_align(g_preload, NULL, LV_ALIGN_CENTER, 0, 0);
+      |                             ^~~~
+      |                             |
+      |                             void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:126:5: error: too many arguments to function 'lv_obj_align'
+  126 |     lv_obj_align(g_preload, NULL, LV_ALIGN_CENTER, 0, 0);
+      |     ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'wifi_connect_success':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:152:21: error: implicit declaration of function 'lv_list_get_btn_selected'; did you mean 'lv_list_get_btn_text'? [-Werror=implicit-function-declaration]
+  152 |     lv_obj_t *btn = lv_list_get_btn_selected(g_wifi_list);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                     lv_list_get_btn_text
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:152:21: warning: initialization of 'lv_obj_t *' {aka 'struct _lv_obj_t *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:153:5: error: implicit declaration of function 'lv_btn_set_checkable' [-Werror=implicit-function-declaration]
+  153 |     lv_btn_set_checkable(btn, false);
+      |     ^~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:156:57: error: 'LV_COLOR_BLUE' undeclared (first use in this function); did you mean 'LOG_COLOR_BLUE'?
+  156 |     lv_style_set_bg_color(&style_btn, LV_STATE_DEFAULT, LV_COLOR_BLUE);
+      |                                                         ^~~~~~~~~~~~~
+      |                                                         LOG_COLOR_BLUE
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:156:57: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:156:39: error: incompatible type for argument 2 of 'lv_style_set_bg_color'
+  156 |     lv_style_set_bg_color(&style_btn, LV_STATE_DEFAULT, LV_COLOR_BLUE);
+      |                                       ^~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       int
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\misc\lv_style.h:468,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:18,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\misc\lv_style_gen.h:22:59: note: expected 'lv_color_t' {aka 'lv_color16_t'} but argument is of type 'int'
+   22 | void lv_style_set_bg_color(lv_style_t * style, lv_color_t value);
+      |                                                ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:156:5: error: too many arguments to function 'lv_style_set_bg_color'
+  156 |     lv_style_set_bg_color(&style_btn, LV_STATE_DEFAULT, LV_COLOR_BLUE);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\misc\lv_style.h:468,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:18,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\misc\lv_style_gen.h:22:6: note: declared here
+   22 | void lv_style_set_bg_color(lv_style_t * style, lv_color_t value);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:157:27: error: 'LV_BTN_PART_MAIN' undeclared (first use in this function); did you mean 'LV_PART_MAIN'?
+  157 |     lv_obj_add_style(btn, LV_BTN_PART_MAIN, &style_btn);
+      |                           ^~~~~~~~~~~~~~~~
+      |                           LV_PART_MAIN
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:157:45: warning: passing argument 3 of 'lv_obj_add_style' makes integer from pointer without a cast [-Wint-conversion]
+  157 |     lv_obj_add_style(btn, LV_BTN_PART_MAIN, &style_btn);
+      |                                             ^~~~~~~~~~
+      |                                             |
+      |                                             lv_style_t *
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/core/lv_obj.h:140,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:35,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/core/lv_obj_style.h:75:87: note: expected 'lv_style_selector_t' {aka 'long unsigned int'} but argument is of type 'lv_style_t *'
+   75 | void lv_obj_add_style(struct _lv_obj_t * obj, lv_style_t * style, lv_style_selector_t selector);
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'pswd_page_click_connect_cb':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:163:26: error: invalid operands to binary == (have 'int' and 'lv_event_t' {aka 'struct _lv_event_t'})
+  163 |     if (LV_EVENT_CLICKED == event) {
+      |                          ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:166:30: warning: initialization of 'lv_obj_t *' {aka 'struct _lv_obj_t *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  166 |         lv_obj_t *wifi_btn = lv_list_get_btn_selected(g_wifi_list);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:167:25: error: implicit declaration of function 'lv_list_get_btn_index'; did you mean 'lv_list_get_btn_text'? [-Werror=implicit-function-declaration]
+  167 |         int32_t index = lv_list_get_btn_index(g_wifi_list, wifi_btn);
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+      |                         lv_list_get_btn_text
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'pswd_page_click_cancel_cb':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:177:26: error: invalid operands to binary == (have 'int' and 'lv_event_t' {aka 'struct _lv_event_t'})
+  177 |     if (LV_EVENT_CLICKED == event) {
+      |                          ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'ta_event_cb':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:186:15: error: invalid operands to binary == (have 'lv_event_t' {aka 'struct _lv_event_t'} and 'int')
+  186 |     if (event == LV_EVENT_CLICKED) {
+      |               ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:193:20: error: invalid operands to binary == (have 'lv_event_t' {aka 'struct _lv_event_t'} and 'int')
+  193 |     else if (event == LV_EVENT_INSERT) {
+      |                    ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:194:27: error: implicit declaration of function 'lv_event_get_data'; did you mean 'lv_event_get_param'? [-Werror=implicit-function-declaration]
+  194 |         const char *str = lv_event_get_data();
+      |                           ^~~~~~~~~~~~~~~~~
+      |                           lv_event_get_param
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:194:27: warning: initialization of 'const char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'kb_event_cb':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:203:30: warning: passing argument 1 of 'lv_keyboard_def_event_cb' from incompatible pointer type [-Wincompatible-pointer-types]
+  203 |     lv_keyboard_def_event_cb(kb, event);
+      |                              ^~
+      |                              |
+      |                              lv_obj_t * {aka struct _lv_obj_t *}
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/lv_widgets.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:70,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/keyboard/lv_keyboard.h:175:44: note: expected 'lv_event_t *' {aka 'struct _lv_event_t *'} but argument is of type 'lv_obj_t *' {aka 'struct _lv_obj_t *'}
+  175 | void lv_keyboard_def_event_cb(lv_event_t * e);
+      |                               ~~~~~~~~~~~~~^
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:203:5: error: too many arguments to function 'lv_keyboard_def_event_cb'
+  203 |     lv_keyboard_def_event_cb(kb, event);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/lv_widgets.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:70,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/keyboard/lv_keyboard.h:175:6: note: declared here
+  175 | void lv_keyboard_def_event_cb(lv_event_t * e);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:205:32: error: invalid operands to binary == (have 'int' and 'lv_event_t' {aka 'struct _lv_event_t'})
+  205 |     if (LV_EVENT_VALUE_CHANGED == event) {
+      |                                ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:208:13: error: implicit declaration of function 'lv_btn_set_state'; did you mean 'lv_imgbtn_set_state'? [-Werror=implicit-function-declaration]
+  208 |             lv_btn_set_state(btn_connect, LV_BTN_STATE_RELEASED);
+      |             ^~~~~~~~~~~~~~~~
+      |             lv_imgbtn_set_state
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:208:43: error: 'LV_BTN_STATE_RELEASED' undeclared (first use in this function); did you mean 'LV_IMGBTN_STATE_RELEASED'?
+  208 |             lv_btn_set_state(btn_connect, LV_BTN_STATE_RELEASED);
+      |                                           ^~~~~~~~~~~~~~~~~~~~~
+      |                                           LV_IMGBTN_STATE_RELEASED
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:210:43: error: 'LV_BTN_STATE_DISABLED' undeclared (first use in this function); did you mean 'LV_IMGBTN_STATE_DISABLED'?
+  210 |             lv_btn_set_state(btn_connect, LV_BTN_STATE_DISABLED);
+      |                                           ^~~~~~~~~~~~~~~~~~~~~
+      |                                           LV_IMGBTN_STATE_DISABLED
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:214:9: error: 'LV_EVENT_APPLY' undeclared (first use in this function); did you mean 'LV_EVENT_ALL'?
+  214 |     if (LV_EVENT_APPLY == event || LV_EVENT_CANCEL == event) {
+      |         ^~~~~~~~~~~~~~
+      |         LV_EVENT_ALL
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:214:52: error: invalid operands to binary == (have 'int' and 'lv_event_t' {aka 'struct _lv_event_t'})
+  214 |     if (LV_EVENT_APPLY == event || LV_EVENT_CANCEL == event) {
+      |                                                    ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:217:65: error: implicit declaration of function 'lv_btn_get_state'; did you mean 'lv_obj_get_state'? [-Werror=implicit-function-declaration]
+  217 |         if (LV_EVENT_APPLY == event && LV_BTN_STATE_DISABLED != lv_btn_get_state(btn_connect)) {
+      |                                                                 ^~~~~~~~~~~~~~~~
+      |                                                                 lv_obj_get_state
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:219:46: error: incompatible type for argument 2 of 'pswd_page_click_connect_cb'
+  219 |             pswd_page_click_connect_cb(NULL, LV_EVENT_CLICKED);
+      |                                              ^~~~~~~~~~~~~~~~
+      |                                              |
+      |                                              int
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:161:66: note: expected 'lv_event_t' {aka 'struct _lv_event_t'} but argument is of type 'int'
+  161 | static void pswd_page_click_connect_cb(lv_obj_t *obj, lv_event_t event)
+      |                                                       ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'ap_page_click_connect_cb':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:226:26: error: invalid operands to binary == (have 'int' and 'lv_event_t' {aka 'struct _lv_event_t'})
+  226 |     if (LV_EVENT_CLICKED == event) {
+      |                          ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:228:23: error: implicit declaration of function 'lv_cont_create'; did you mean 'lv_win_create'? [-Werror=implicit-function-declaration]
+  228 |         g_pswd_page = lv_cont_create(g_contain, NULL);
+      |                       ^~~~~~~~~~~~~~
+      |                       lv_win_create
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:228:21: warning: assignment to 'lv_obj_t *' {aka 'struct _lv_obj_t *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  228 |         g_pswd_page = lv_cont_create(g_contain, NULL);
+      |                     ^
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:232:30: warning: initialization of 'lv_obj_t *' {aka 'struct _lv_obj_t *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  232 |         lv_obj_t *wifi_btn = lv_list_get_btn_selected(g_wifi_list);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:235:31: error: too many arguments to function 'lv_label_create'
+  235 |         lv_obj_t *pwd_label = lv_label_create(g_pswd_page, NULL);
+      |                               ^~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:49,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_label.h:90:12: note: declared here
+   90 | lv_obj_t * lv_label_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:237:39: error: 'LV_ALIGN_IN_TOP_MID' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_TOP_MID'?
+  237 |         lv_obj_align(pwd_label, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
+      |                                       ^~~~~~~~~~~~~~~~~~~
+      |                                       LV_ALIGN_OUT_TOP_MID
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:237:33: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  237 |         lv_obj_align(pwd_label, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
+      |                                 ^~~~
+      |                                 |
+      |                                 void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:237:9: error: too many arguments to function 'lv_obj_align'
+  237 |         lv_obj_align(pwd_label, NULL, LV_ALIGN_IN_TOP_MID, 0, 0);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:241:18: error: too many arguments to function 'lv_textarea_create'
+  241 |         pwd_ta = lv_textarea_create(g_pswd_page, NULL);
+      |                  ^~~~~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:58,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_textarea.h:83:12: note: declared here
+   83 | lv_obj_t * lv_textarea_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:242:30: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  242 |         lv_obj_align(pwd_ta, NULL, LV_ALIGN_IN_TOP_MID, 0, 22);
+      |                              ^~~~
+      |                              |
+      |                              void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:242:9: error: too many arguments to function 'lv_obj_align'
+  242 |         lv_obj_align(pwd_ta, NULL, LV_ALIGN_IN_TOP_MID, 0, 22);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:244:9: error: implicit declaration of function 'lv_textarea_set_pwd_mode'; did you mean 'lv_textarea_set_password_mode'? [-Werror=implicit-function-declaration]
+  244 |         lv_textarea_set_pwd_mode(pwd_ta, true);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_textarea_set_password_mode
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:246:9: error: implicit declaration of function 'lv_textarea_set_cursor_hidden'; did you mean 'lv_textarea_set_cursor_pos'? [-Werror=implicit-function-declaration]
+  246 |         lv_textarea_set_cursor_hidden(pwd_ta, true);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_textarea_set_cursor_pos
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:247:9: error: implicit declaration of function 'lv_obj_set_event_cb'; did you mean 'lv_obj_add_event_cb'? [-Werror=implicit-function-declaration]
+  247 |         lv_obj_set_event_cb(pwd_ta, ta_event_cb);
+      |         ^~~~~~~~~~~~~~~~~~~
+      |         lv_obj_add_event_cb
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:250:32: error: too many arguments to function 'lv_btn_create'
+  250 |         lv_obj_t *btn_cancel = lv_btn_create(g_pswd_page, NULL);
+      |                                ^~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:47,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_btn.h:44:12: note: declared here
+   44 | lv_obj_t * lv_btn_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:253:34: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  253 |         lv_obj_align(btn_cancel, pwd_ta, LV_ALIGN_OUT_BOTTOM_MID, -80, 5);
+      |                                  ^~~~~~
+      |                                  |
+      |                                  lv_obj_t * {aka struct _lv_obj_t *}
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'lv_obj_t *' {aka 'struct _lv_obj_t *'}
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:253:9: error: too many arguments to function 'lv_obj_align'
+  253 |         lv_obj_align(btn_cancel, pwd_ta, LV_ALIGN_OUT_BOTTOM_MID, -80, 5);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:254:17: error: too many arguments to function 'lv_label_create'
+  254 |         label = lv_label_create(btn_cancel, NULL);
+      |                 ^~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:49,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_label.h:90:12: note: declared here
+   90 | lv_obj_t * lv_label_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:257:23: error: too many arguments to function 'lv_btn_create'
+  257 |         btn_connect = lv_btn_create(g_pswd_page, NULL);
+      |                       ^~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:47,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_btn.h:44:12: note: declared here
+   44 | lv_obj_t * lv_btn_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:260:35: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  260 |         lv_obj_align(btn_connect, pwd_ta, LV_ALIGN_OUT_BOTTOM_MID, 80, 5);
+      |                                   ^~~~~~
+      |                                   |
+      |                                   lv_obj_t * {aka struct _lv_obj_t *}
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'lv_obj_t *' {aka 'struct _lv_obj_t *'}
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:260:9: error: too many arguments to function 'lv_obj_align'
+  260 |         lv_obj_align(btn_connect, pwd_ta, LV_ALIGN_OUT_BOTTOM_MID, 80, 5);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:261:39: error: 'LV_BTN_STATE_DISABLED' undeclared (first use in this function); did you mean 'LV_IMGBTN_STATE_DISABLED'?
+  261 |         lv_btn_set_state(btn_connect, LV_BTN_STATE_DISABLED);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+      |                                       LV_IMGBTN_STATE_DISABLED
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:262:17: error: too many arguments to function 'lv_label_create'
+  262 |         label = lv_label_create(btn_connect, NULL);
+      |                 ^~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:49,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_label.h:90:12: note: declared here
+   90 | lv_obj_t * lv_label_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:266:14: error: too many arguments to function 'lv_keyboard_create'
+  266 |         kb = lv_keyboard_create(g_pswd_page, NULL);
+      |              ^~~~~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/lv_widgets.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:70,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/keyboard/lv_keyboard.h:70:12: note: declared here
+   70 | lv_obj_t * lv_keyboard_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:268:32: error: 'LV_ALIGN_IN_BOTTOM_MID' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_BOTTOM_MID'?
+  268 |         lv_obj_align(kb, NULL, LV_ALIGN_IN_BOTTOM_MID, 0, 0);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+      |                                LV_ALIGN_OUT_BOTTOM_MID
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:268:26: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  268 |         lv_obj_align(kb, NULL, LV_ALIGN_IN_BOTTOM_MID, 0, 0);
+      |                          ^~~~
+      |                          |
+      |                          void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:268:9: error: too many arguments to function 'lv_obj_align'
+  268 |         lv_obj_align(kb, NULL, LV_ALIGN_IN_BOTTOM_MID, 0, 0);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:271:9: error: implicit declaration of function 'lv_keyboard_set_cursor_manage' [-Werror=implicit-function-declaration]
+  271 |         lv_keyboard_set_cursor_manage(kb, true); /* Automatically show/hide cursors on text areas */
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'ap_page_click_cancel_cb':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:281:26: error: invalid operands to binary == (have 'int' and 'lv_event_t' {aka 'struct _lv_event_t'})
+  281 |     if (LV_EVENT_CLICKED == event) {
+      |                          ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'click_wifi_list_cb':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:290:26: error: invalid operands to binary == (have 'int' and 'lv_event_t' {aka 'struct _lv_event_t'})
+  290 |     if (LV_EVENT_CLICKED == event) {
+      |                          ^~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:291:30: warning: initialization of 'lv_obj_t *' {aka 'struct _lv_obj_t *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  291 |         lv_obj_t *wifi_btn = lv_list_get_btn_selected(g_wifi_list);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:299:21: error: implicit declaration of function 'lv_page_create'; did you mean 'lv_bar_create'? [-Werror=implicit-function-declaration]
+  299 |         g_ap_page = lv_page_create(g_contain, NULL);
+      |                     ^~~~~~~~~~~~~~
+      |                     lv_bar_create
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:299:19: warning: assignment to 'lv_obj_t *' {aka 'struct _lv_obj_t *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  299 |         g_ap_page = lv_page_create(g_contain, NULL);
+      |                   ^
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:301:39: error: 'LV_ALIGN_IN_BOTTOM_MID' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_BOTTOM_MID'?
+  301 |         lv_obj_align(g_ap_page, NULL, LV_ALIGN_IN_BOTTOM_MID, 0, -5);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~
+      |                                       LV_ALIGN_OUT_BOTTOM_MID
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:301:33: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  301 |         lv_obj_align(g_ap_page, NULL, LV_ALIGN_IN_BOTTOM_MID, 0, -5);
+      |                                 ^~~~
+      |                                 |
+      |                                 void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:301:9: error: too many arguments to function 'lv_obj_align'
+  301 |         lv_obj_align(g_ap_page, NULL, LV_ALIGN_IN_BOTTOM_MID, 0, -5);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:303:32: error: too many arguments to function 'lv_label_create'
+  303 |         lv_obj_t *ssid_label = lv_label_create(g_ap_page, NULL);
+      |                                ^~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:49,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_label.h:90:12: note: declared here
+   90 | lv_obj_t * lv_label_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:305:40: error: 'LV_ALIGN_IN_TOP_LEFT' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_TOP_LEFT'?
+  305 |         lv_obj_align(ssid_label, NULL, LV_ALIGN_IN_TOP_LEFT, 0, 0);
+      |                                        ^~~~~~~~~~~~~~~~~~~~
+      |                                        LV_ALIGN_OUT_TOP_LEFT
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:305:34: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  305 |         lv_obj_align(ssid_label, NULL, LV_ALIGN_IN_TOP_LEFT, 0, 0);
+      |                                  ^~~~
+      |                                  |
+      |                                  void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:305:9: error: too many arguments to function 'lv_obj_align'
+  305 |         lv_obj_align(ssid_label, NULL, LV_ALIGN_IN_TOP_LEFT, 0, 0);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:313:9: error: implicit declaration of function 'lv_label_set_align'; did you mean 'lv_obj_set_align'? [-Werror=implicit-function-declaration]
+  313 |         lv_label_set_align(ssid_label, LV_LABEL_ALIGN_LEFT);
+      |         ^~~~~~~~~~~~~~~~~~
+      |         lv_obj_set_align
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:313:40: error: 'LV_LABEL_ALIGN_LEFT' undeclared (first use in this function); did you mean 'LV_TEXT_ALIGN_LEFT'?
+  313 |         lv_label_set_align(ssid_label, LV_LABEL_ALIGN_LEFT);
+      |                                        ^~~~~~~~~~~~~~~~~~~
+      |                                        LV_TEXT_ALIGN_LEFT
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:316:32: error: too many arguments to function 'lv_btn_create'
+  316 |         lv_obj_t *btn_cancel = lv_btn_create(g_ap_page, NULL);
+      |                                ^~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:47,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_btn.h:44:12: note: declared here
+   44 | lv_obj_t * lv_btn_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:319:40: error: 'LV_ALIGN_IN_BOTTOM_LEFT' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_BOTTOM_LEFT'?
+  319 |         lv_obj_align(btn_cancel, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 0, 0);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                        LV_ALIGN_OUT_BOTTOM_LEFT
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:319:34: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  319 |         lv_obj_align(btn_cancel, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 0, 0);
+      |                                  ^~~~
+      |                                  |
+      |                                  void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:319:9: error: too many arguments to function 'lv_obj_align'
+  319 |         lv_obj_align(btn_cancel, NULL, LV_ALIGN_IN_BOTTOM_LEFT, 0, 0);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:320:17: error: too many arguments to function 'lv_label_create'
+  320 |         label = lv_label_create(btn_cancel, NULL);
+      |                 ^~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:49,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_label.h:90:12: note: declared here
+   90 | lv_obj_t * lv_label_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:323:33: error: too many arguments to function 'lv_btn_create'
+  323 |         lv_obj_t *btn_connect = lv_btn_create(g_ap_page, NULL);
+      |                                 ^~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:47,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_btn.h:44:12: note: declared here
+   44 | lv_obj_t * lv_btn_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:326:41: error: 'LV_ALIGN_IN_BOTTOM_RIGHT' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_BOTTOM_RIGHT'?
+  326 |         lv_obj_align(btn_connect, NULL, LV_ALIGN_IN_BOTTOM_RIGHT, 0, 0);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         LV_ALIGN_OUT_BOTTOM_RIGHT
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:326:35: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  326 |         lv_obj_align(btn_connect, NULL, LV_ALIGN_IN_BOTTOM_RIGHT, 0, 0);
+      |                                   ^~~~
+      |                                   |
+      |                                   void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:326:9: error: too many arguments to function 'lv_obj_align'
+  326 |         lv_obj_align(btn_connect, NULL, LV_ALIGN_IN_BOTTOM_RIGHT, 0, 0);
+      |         ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:327:17: error: too many arguments to function 'lv_label_create'
+  327 |         label = lv_label_create(btn_connect, NULL);
+      |                 ^~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:49,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_label.h:90:12: note: declared here
+   90 | lv_obj_t * lv_label_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'start_wifi_scan':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:357:5: error: implicit declaration of function 'wifi_timeout_timer_create'; did you mean 'wifi_timeout_timer_delete'? [-Werror=implicit-function-declaration]
+  357 |     wifi_timeout_timer_create(wifi_scan_timeout_cb, "scan timer", WIFI_SCAN_TIMEOUT);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |     wifi_timeout_timer_delete
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'littlevgl_wificonfig_init':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:374:27: error: too many arguments to function 'lv_label_create'
+  374 |     g_wifi_config_label = lv_label_create(g_contain, NULL);
+      |                           ^~~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:49,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/widgets/lv_label.h:90:12: note: declared here
+   90 | lv_obj_t * lv_label_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:376:50: error: 'LV_ALIGN_IN_TOP_MID' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_TOP_MID'?
+  376 |     lv_obj_align(g_wifi_config_label, g_contain, LV_ALIGN_IN_TOP_MID, 0, 0);
+      |                                                  ^~~~~~~~~~~~~~~~~~~
+      |                                                  LV_ALIGN_OUT_TOP_MID
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:376:39: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  376 |     lv_obj_align(g_wifi_config_label, g_contain, LV_ALIGN_IN_TOP_MID, 0, 0);
+      |                                       ^~~~~~~~~
+      |                                       |
+      |                                       lv_obj_t * {aka struct _lv_obj_t *}
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'lv_obj_t *' {aka 'struct _lv_obj_t *'}
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:376:5: error: too many arguments to function 'lv_obj_align'
+  376 |     lv_obj_align(g_wifi_config_label, g_contain, LV_ALIGN_IN_TOP_MID, 0, 0);
+      |     ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:378:19: error: too many arguments to function 'lv_list_create'
+  378 |     g_wifi_list = lv_list_create(g_contain, NULL);
+      |                   ^~~~~~~~~~~~~~
+In file included from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/lv_widgets.h:22,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:70,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/extra/widgets/list/lv_list.h:36:12: note: declared here
+   36 | lv_obj_t * lv_list_create(lv_obj_t * parent);
+      |            ^~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:380:37: error: 'LV_ALIGN_IN_TOP_LEFT' undeclared (first use in this function); did you mean 'LV_ALIGN_OUT_TOP_LEFT'?
+  380 |     lv_obj_align(g_wifi_list, NULL, LV_ALIGN_IN_TOP_LEFT, 0, lv_obj_get_height(g_wifi_config_label));
+      |                                     ^~~~~~~~~~~~~~~~~~~~
+      |                                     LV_ALIGN_OUT_TOP_LEFT
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:380:31: warning: passing argument 2 of 'lv_obj_align' makes integer from pointer without a cast [-Wint-conversion]
+  380 |     lv_obj_align(g_wifi_list, NULL, LV_ALIGN_IN_TOP_LEFT, 0, lv_obj_get_height(g_wifi_config_label));
+      |                               ^~~~
+      |                               |
+      |                               void *
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:54: note: expected 'lv_align_t' {aka 'unsigned char'} but argument is of type 'void *'
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |                                           ~~~~~~~~~~~^~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:380:5: error: too many arguments to function 'lv_obj_align'
+  380 |     lv_obj_align(g_wifi_list, NULL, LV_ALIGN_IN_TOP_LEFT, 0, lv_obj_get_height(g_wifi_config_label));
+      |     ^~~~~~~~~~~~
+In file included from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_dither.h:16,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\sw/lv_draw_sw_gradient.h:18,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw_rect.h:20,
+                 from c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\draw\lv_draw.h:23,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal_disp.h:21,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/src/hal/lv_hal.h:16,
+                 from C:/Users/23191/Desktop/rgb_panel/managed_components/lvgl__lvgl/lvgl.h:33,
+                 from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:9:
+c:\users\23191\desktop\rgb_panel\managed_components\lvgl__lvgl\src\core\lv_obj_pos.h:180:6: note: declared here
+  180 | void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'wifi_config_event_task':
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:524:13: error: implicit declaration of function 'lvgl_acquire'; did you mean '_lock_acquire'? [-Werror=implicit-function-declaration]
+  524 |             lvgl_acquire();
+      |             ^~~~~~~~~~~~
+      |             _lock_acquire
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:526:13: error: implicit declaration of function 'lvgl_release'; did you mean '_lock_release'? [-Werror=implicit-function-declaration]
+  526 |             lvgl_release();
+      |             ^~~~~~~~~~~~
+      |             _lock_release
+In file included from C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:16:
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c: In function 'example_lvgl_demo_ui':
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:584:5: note: in expansion of macro 'ESP_LOGI'
+  584 |     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
+      |     ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:584:5: note: in expansion of macro 'ESP_LOGI'
+  584 |     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
+      |     ^~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:584:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  584 |     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
+      | ^   ~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:584:5: note: in expansion of macro 'ESP_LOGI'
+  584 |     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
+      |     ^~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:584:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  584 |     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
+      | ^   ~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:584:5: note: in expansion of macro 'ESP_LOGI'
+  584 |     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
+      |     ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.0.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/23191/Desktop/rgb_panel/main/lvgl_demo_ui.c:584:5: note: in expansion of macro 'ESP_LOGI'
+  584 |     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
+      |     ^~~~~~~~
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

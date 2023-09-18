@@ -1,0 +1,4 @@
+dependencies:
+  espressif/esp_lcd_touch_ft5x06: "==1.0.0"
+  idf: ">=4.4"
+  lvgl/lvgl: "~8.2.0"

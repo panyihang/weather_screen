@@ -1,0 +1,24 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/23191/Desktop/rgb_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5b40 bytes. 0x24c0 bytes (29%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/s220_12fps.c.obj
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rgb_lcd_example_main.c.obj
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c: In function 'app_main':
+C:/Users/23191/Desktop/rgb_panel/main/rgb_lcd_example_main.c:224:16: warning: unused variable 'disp' [-Wunused-variable]
+  224 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+[4/9] Linking C static library esp-idf\main\libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable rgb_panel.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin
+[8/9] cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/23191/Desktop/rgb_panel/build/partition_table/partition-table.bin C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin"
+FAILED: esp-idf/esptool_py/CMakeFiles/app_check_size C:/Users/23191/Desktop/rgb_panel/build/esp-idf/esptool_py/CMakeFiles/app_check_size 
+cmd.exe /C "cd /D C:\Users\23191\Desktop\rgb_panel\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/23191/Desktop/rgb_panel/build/partition_table/partition-table.bin C:/Users/23191/Desktop/rgb_panel/build/rgb_panel.bin"
+Error: app partition is too small for binary rgb_panel.bin size 0x17c2d0:
+  - Part 'factory' 0/0 @ 0x10000 size 0x177000 (overflow 0x52d0)
+ninja: build stopped: subcommand failed.
